@@ -1,0 +1,201 @@
+/* ================================= Google fonts ============================================= */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* =============================== Google fonts ends ============================= */
+/* =============================== common css starts ============================= */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 1300px;
+    background: url(../images/bodybg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    overflow-x: hidden;
+}
+.bodyBlur{
+    width: 100%;
+    height: 1300px;
+    backdrop-filter: blur(10px);
+}
+.wombDiv{
+    position: relative;
+    top: 14%;
+    left: 20%
+}
+:root{
+    --Lexend : "Lexend", sans-serif;
+    --Poppins : "Poppins", sans-serif;
+}
+/* ==================== common css ends ============================= */
+/* ==================== h1 starts =================================== */
+h1{ 
+    width: 550px;
+    text-align: center;
+    /* margin-top: 50px; */
+    font-size: 90px;
+    font-weight: 700;
+    font-family: var(--Lexend);
+    color: transparent;
+    border-radius: 0 25px 0 25px;
+    border: 2px solid rgba(74, 164, 0, 0.882);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+    background-image: url(../images/h1bg1.jpg);
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.errortxt{
+    color: rgb(57, 254, 2);
+    font-size: 24px; 
+    margin-top: 76px;
+    margin-left: 154px;
+    letter-spacing: 2px;
+    font-style: oblique;
+}
+/* =============================== h1 ends =========================== */
+/* =============================== to-do-List starts =========================  */
+.to-doListInput{
+    margin-top: 6px;
+    margin-bottom: 40px;
+    width: 550px;
+    height: 95px;
+    padding: 5px;
+    padding-bottom: 5px;
+    border: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+}
+.mainInput {
+    width: 430px;
+    height: 80px;
+    font-size: 28px;
+    font-weight: 300;
+    color: #161616;
+    font-family: var(--Lexend);
+    letter-spacing: 1.2px;
+    padding: 0 10px 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 7px 0 0 7px;
+    background: linear-gradient(90deg, #ffffff , #bcf69d) ;
+}
+.mainInput:focus {
+    box-shadow: inset 20px 20px 20px #f6ffed24,
+    inset -20px -6px 20px #f6ffed24;
+    /* border: 2px solid #f4d03f; */
+}
+.mainInput::placeholder{
+    color: #3d3c3c;
+    font-size: 20px;
+    font-style: oblique;
+}
+/* ======================== main Input button ============================= */
+.maininput-Button{
+    width: 127px;
+    height: 80px;
+    border-radius: 0 7px 7px 0 ;
+    background: linear-gradient(90deg, #96e6a1,  #f4d03f);
+    border: none;
+    outline: none;
+    border-radius: 0 7px 7px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #0e0067;
+    font-family: var(--Lexend);
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    transition: 0.3s all linear ;
+}
+.maininput-Button:hover{
+    color: rgb(5, 5, 118);
+}
+.maininput-Button:active{
+    font-size: 24px;
+}
+.maininput-Button::before{
+    content: '';
+    width: 0;
+    height: 80px;
+    border-radius: 7px 0 0  7px ;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    background: #799a00;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.maininput-Button:hover::before{
+    width: 124px;
+    opacity: 0.4;
+    rotate: -180deg;
+}
+/* ======================== result input =============================== */
+.resultMainDiv{
+    margin-top: 10px;
+    width: 710px;
+}
+.resultSingleDiv{
+    position: relative;
+    width: 648px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resultInput {
+    position: relative;
+    cursor: text;
+    width: 430px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: cursive;
+    font-style: oblique;
+    padding: 0 16px 0 20px;
+    background-color: #edc709;
+    border-radius: 7px;
+    color: rgb(28, 30, 46);
+}
+.resultInput::placeholder{
+    color: #7c7c7c;
+}
+ /*========================================= resultinput-Button ========================  */
+.btn,
+.deltBtn{
+    width: 100px;
+    height: 60px;
+    color: #2f2f2f;
+    padding: 16px 10px;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: var(--Lexend);
+    border-radius: 7px;
+    background: #E68369;
+    cursor: pointer;
+    border: 1px solid #FFF5CD;
+    transition: all 0.3s;
+    box-shadow: 0px 6px 10px #283848, 0px 6px 10px #283848;
+    transition: all linear 0.1s;
+}
+.btn:active,
+.deltBtn:active {
+    box-shadow: none;
+    transform: scale(0.98);
+}
+.deltBtn{
+    background: #C62E2E;
+    color: #E2D1C3;
+}
+/* =========================== to-do-List ends ============================ */

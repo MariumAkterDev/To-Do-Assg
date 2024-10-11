@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <!-- =============================== body bg part ==================== -->
+    <div class="bodyBlur">
+        <!-- ============================= to-do list part ================ -->
+        <div class="wombDiv">
+            <h1>To-Do List</h1> 
+            <h4 class="errortxt"> </h4>
+            <!-- ================== List Input part ================= -->
+            <div class="to-doListInput">
+                <input onkeydown="addEnterKey(event)" class="mainInput" type="search" placeholder="Enter your text...">
+                <button onclick="btnClick()" class="maininput-Button">Add</button>
+            </div>
+            <!-- ========================== result input part =============== -->
+            <div class="resultMainDiv">
+                <!-- <div class="resultSingleDiv">
+                    <input onkeydown="" class="resultInput" type="text" placeholder="Lists..." readonly>
+                    <button onclick="" class="resultEdit-Button btn">Edit</button>
+                    <button onclick="" class="resultDelt-Button btn ">Delete</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================================== JavaScript Link ================================= -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
